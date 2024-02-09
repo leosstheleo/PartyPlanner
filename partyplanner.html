@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party Planner</title>
+  <style>
+    /* Some basic styling for demonstration purposes */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Party Planner</h1>
+
+  <!-- Form to add a new party -->
+  <form id="partyForm">
+    <label for="partyName">Party Name:</label><br>
+    <input type="text" id="partyName" name="partyName" required><br>
+    <label for="partyDate">Date:</label><br>
+    <input type="date" id="partyDate" name="partyDate" required><br>
+    <label for="partyTime">Time:</label><br>
+    <input type="time" id="partyTime" name="partyTime" required><br>
+    <label for="partyLocation">Location:</label><br>
+    <input type="text" id="partyLocation" name="partyLocation" required><br>
+    <label for="partyDescription">Description:</label><br>
+    <textarea id="partyDescription" name="partyDescription" required></textarea><br>
+    <button type="submit">Add Party</button>
+  </form>
+
+  <!-- List of parties -->
+  <ul id="partyList"></ul>
+
+  <!-- Link to JavaScript file -->
+  <script src="partyplanner.js"></script>
+</body>
+</html>
